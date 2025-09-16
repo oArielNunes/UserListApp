@@ -1,4 +1,4 @@
-package com.example.userlistapp
+package com.example.userlistapp.data.ui
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -9,7 +9,15 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import retrofit2.Retrofit
+import com.example.userlistapp.R
+import com.example.userlistapp.data.api.RetrofitClient
+import com.example.userlistapp.data.repository.UserRepository
+
+
+//Essa camada é referente à VIEW (UI)
+// infla o layout XML / configura os componentes visuais RecyclerView//
+// observa os dados expostos pelo ViewModel reagindo às mudanças //
+
 
 class UserListFragment : Fragment() {  //é necessário que a classe herde de Fragment// A classe irá ser responsável por inflar o layout e exibir  a lista de usuários. //
 

@@ -1,5 +1,6 @@
-package com.example.userlistapp
+package com.example.userlistapp.data.api
 
+import com.example.userlistapp.data.ui.User
 import retrofit2.Call
 import retrofit2.http.GET
 

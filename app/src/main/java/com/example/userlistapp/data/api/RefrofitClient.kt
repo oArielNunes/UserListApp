@@ -1,4 +1,4 @@
-package com.example.userlistapp
+package com.example.userlistapp.data.api
 
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
@@ -16,3 +16,7 @@ object RetrofitClient {
             .create(ApiService::class.java)  // Cria a interface ApiService para as requisições
     }
 }
+
+
+//Essa camada se refere à MODEL (Configuração dos dados)
+//Configura o cliente (Retrofit) para acessar a fonte de dados remota (API)

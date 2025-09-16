@@ -1,8 +1,9 @@
-package com.example.userlistapp
+package com.example.userlistapp.data.ui
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.example.userlistapp.data.repository.UserRepository
 
 class UserViewModel (private val userRepository: UserRepository) : ViewModel(){
 
@@ -23,3 +24,8 @@ class UserViewModel (private val userRepository: UserRepository) : ViewModel(){
         }
     }
 }
+
+
+//Essa camada represente a VIEWMODEL //
+// solicita os dados do repositório //
+// Expõe dados user/error para a View observar

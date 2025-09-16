@@ -1,10 +1,8 @@
-package com.example.userlistapp
+package com.example.userlistapp.data.ui
 
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import com.example.userlistapp.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,3 +15,6 @@ class MainActivity : AppCompatActivity() {
             .commit() //resposável por finalizar a transação e aplicar as mudanças
     }
 }
+
+
+//Essa camada é referente à VIEW (Container) //
